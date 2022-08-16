@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include usmanatron.ansible_role_template"
+      ansible.builtin.include_role:
+        name: "usmanatron.ansible_role_template"
